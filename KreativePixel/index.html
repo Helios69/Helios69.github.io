@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KreativePixel</title>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <!-- STYLES -->
+    <link rel="stylesheet" href="plugins/slick/slick.css">
+    <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ICONS -->
+<svg style="display: none;">
+    <symbol id="smartphone_logo" viewBox="0 0 503.604 503.604">
+        <g>
+            <path d="M337.324,0H167.192c-28.924,0-53.5,23.584-53.5,52.5v398.664c0,28.916,24.056,52.44,52.98,52.44l170.412-0.184
+                c28.92,0,52.58-23.528,52.58-52.448l0.248-398.5C389.908,23.452,366.364,0,337.324,0z M227.68,31.476h49.36
+                c4.336,0,7.868,3.52,7.868,7.868c0,4.348-3.532,7.868-7.868,7.868h-49.36c-4.348,0-7.868-3.52-7.868-7.868
+                C219.812,34.996,223.332,31.476,227.68,31.476z M198.02,33.98c2.916-2.912,8.224-2.952,11.136,0c1.46,1.456,2.324,3.5,2.324,5.588
+                c0,2.048-0.864,4.088-2.324,5.548c-1.452,1.46-3.504,2.32-5.548,2.32c-2.084,0-4.088-0.86-5.588-2.32
+                c-1.452-1.456-2.28-3.5-2.28-5.548C195.736,37.48,196.568,35.436,198.02,33.98z M250.772,488.008
+                c-12.984,0-23.544-10.568-23.544-23.548c0-12.984,10.56-23.548,23.544-23.548s23.544,10.564,23.544,23.548
+                C274.316,477.44,263.752,488.008,250.772,488.008z M365.488,424.908H141.232V74.756h224.256V424.908z"/>
+        </g>
+    </symbol>
+    <symbol id="html_logo" viewBox="0 0 299.215 299.215">
+        <g>
+            <path d="M22.347,0c-2.75,0-4.799,2.241-4.555,4.98l23.184,260.047c0.244,2.739,2.611,5.582,5.262,6.318
+                l98.381,27.316c2.65,0.736,6.986,0.736,9.637,0.002l98.68-27.361c2.65-0.735,5.02-3.578,5.264-6.316L281.422,4.98
+                c0.246-2.739-1.805-4.98-4.555-4.98H22.347z M232.049,59.641c-0.219,2.443-0.598,6.684-0.842,9.423l-0.611,6.823
+                c-0.246,2.738-0.596,6.654-0.781,8.701c-0.184,2.048-0.359,3.723-0.391,3.723c-0.031,0-2.307,0-5.057,0h-69.76
+                c-2.75,0-5.023,0-5.053,0s-2.305,0-5.055,0h-36.74c-2.75,0-4.799,2.241-4.555,4.98l2.143,23.955c0.244,2.738,2.695,4.98,5.445,4.98
+                H144.5c2.75,0,5.025,0,5.055,0s2.303,0,5.053,0h57.939c2.75,0,7.006,0,9.457,0c2.449,0,4.273,1.999,4.051,4.442
+                c-0.223,2.443-0.604,6.685-0.848,9.423l-6.891,77.228c-0.246,2.739-0.557,6.238-0.691,7.776c-0.137,1.537-2.416,3.396-5.066,4.131
+                l-58.133,16.119c-2.65,0.734-4.852,1.342-4.893,1.351c-0.041,0.009-2.242-0.586-4.893-1.321l-58.195-16.148
+                c-2.65-0.735-5.018-3.578-5.262-6.317l-3.746-42.045c-0.244-2.739,1.807-4.98,4.557-4.98h5.311c2.75,0,7.25,0,10,0h7.92
+                c2.75,0,5.199,2.241,5.445,4.98l1.469,16.459c0.244,2.739,2.615,5.566,5.271,6.283l27.221,7.351
+                c2.654,0.717,4.836,1.304,4.848,1.304s2.193-0.588,4.848-1.305l27.27-7.369c2.654-0.717,5.027-3.545,5.273-6.283l2.957-32.976
+                c0.246-2.739-1.803-4.98-4.553-4.98h-30.666c-2.75,0-5.023,0-5.053,0s-2.305,0-5.055,0H80.511c-2.75,0-5.199-2.242-5.443-4.98
+                l-7.256-81.306c-0.244-2.739-0.623-6.979-0.842-9.423c-0.217-2.443,1.854-4.442,4.604-4.442H144.5c2.75,0,5.025,0,5.055,0
+                s2.303,0,5.053,0h72.838C230.195,55.198,232.267,57.197,232.049,59.641z"/>
+        </g>
+    </symbol>
+    <symbol id="css_logo"  viewBox="0 0 512 512">
+        <g>
+            <path d="M32,0l40.8,460.8L256,512l183.136-51.168L480,0H32z M392.768,150.688l-5.152,57.888l-15.52,173.568L256,414.208
+                l-0.064,0.032l-116-32.128l-8.128-90.752h56.832l4.224,47.104l63.072,17.024l0.064-0.064l63.136-17.024l8.608-78.432
+                l-198.656,0.544l-5.632-53.664l209.056-2.432l4.224-57.44l-218.88,0.608l-3.68-53.376H256h141.824L392.768,150.688z"/>
+        </g>
+    </symbol>
+    <symbol id="star_logo" viewBox="0 -10 511.99143 511">
+        <g>
+            <path d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657"/>
+        </g>
+    </symbol>    
+</svg>
+  
+<div id="to-top-arrow">
+    <img src="img/nextArrow.png" alt="">
+</div>
+
+<!-- HEADER -->
+<header class="header" id="header">
+
+    <div class="topbar">
+        <div class="wrapper">
+             
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <nav>
+                <ul class="nav">
+                    <li data-scroll="#header"><a href="#" class="nav__link">Home</a></li>
+                    <li data-scroll="#features"><a href="#" class="nav__link" >Features</a></li>
+                    <li data-scroll="#works"><a href="#" class="nav__link">Work</a></li>
+                    <li data-scroll="#blog"><a href="#" class="nav__link">Blog</a></li>
+                    <li data-scroll="#contact"><a href="#" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+           
+
+            <div id="toggle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+        </div><!-- ./wrapper -->
+    </div> <!-- ./topbar -->
+
+    <!-- SLIDER -->
+    <div class="header__banner"> 
+        <div class="wrapper">
+            <div class="banner__content">
+                <h1 class="banner__title">
+                    We Design <span>Creative Website</span>
+                    For Enterprising People
+                </h1>
+                <p class="banner__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisc ing elit. Aliquam viverra consectetur nibh a blan dit. Proin at amet consectetur adipisc lacinia nunc.
+                </p>
+                <a href="#" class="button button--banner">View Projects</a>
+            </div>
+        </div>   
+    </div><!-- ./header__banner -->
+</header>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+    <div class="wrapper">
+        <div class="top-line"></div>
+        <h2 class="section-title">
+            Check Out <span>Features</span>
+        </h2>
+        <div class="features__container">
+            
+            <div class="features__item">
+                <div class="item__inner-container">
+                    <div class="feature__icon">
+                        <svg>
+                            <use xlink:href=#smartphone_logo></use>
+                        </svg>
+                    </div>
+                    <h3 class="feature__title">Mobile Ready</h3>
+                    <p class="feature__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisc ing. Aliquam viverra   dolor sit 
+                        consectetur nibh a blan.
+                    </p>
+                </div>
+                <a class="button button--feature" href="#">Read More</a>
+            </div>
+
+            <div class="features__item">
+                <div class="item__inner-container"> 
+                    <div class="feature__icon">
+                        <svg>
+                            <use xlink:href=#html_logo></use>
+                        </svg>
+                    </div>
+                    <h3 class="feature__title">HTML5 Valid</h3>
+                    <p class="feature__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisc ing. Aliquam viverra   dolor sit 
+                        consectetur nibh a blan.
+                    </p>
+                </div>
+                <a class="button button--feature" href="#">Read More</a>
+            </div>
+
+            <div class="features__item">
+                <div class="item__inner-container"> 
+                    <div class="feature__icon">
+                        <svg>
+                            <use xlink:href=#css_logo></use>
+                        </svg>
+                    </div>
+                    <h3 class="feature__title">CSS3 Valid</h3>
+                    <p class="feature__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisc ing. Aliquam viverra   dolor sit 
+                        consectetur nibh a blan. 
+                    </p>
+                </div>
+                <a class="button button--feature" href="#">Read More</a>
+            </div>
+
+            <div class="features__item">
+               <div class="item__inner-container">   
+                    <div class="feature__icon">
+                        <svg>
+                            <use xlink:href=#star_logo></use>
+                        </svg>
+                    </div>
+                    <h3 class="feature__title">Amazing Desing</h3>
+                    <p class="feature__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisc ing. Aliquam viverra   dolor sit 
+                        consectetur nibh a blan.
+                    </p>
+                </div>
+                <a class="button button--feature" href="#">Read More</a>
+            </div>
+        </div>  <!-- ./features__container -->
+        
+    </div>
+</section>
+
+<!-- WORKS -->
+<section class="works outer-wrapper" id="works">
+    <div class="top-line"></div>
+    <h2 class="section-title">Our Latest <span>Works</span> </h2>
+    
+    <div class="works__slider">
+        
+        <div class="works__slide">
+            <img class="works__img" src="img/works/work1.jpg" alt="">
+            <div class="works__content">
+                <h3 class="works__title">Beautiful Mountain</h3>
+                <p class="works__text">
+                    Beatiful Mountain
+                    Something more beautiful mountains photos.
+                </p>
+            </div>
+        </div>
+
+        <div class="works__slide">
+            <img class="works__img" src="img/works/work2.jpg" alt="">
+            <div class="works__content">
+                <h3 class="works__title">Beautiful Mountain</h3>
+                <p class="works__text">
+                    Beatiful Mountain
+                    Something more beautiful mountains photos.
+                </p>
+            </div>
+        </div>
+
+        <div class="works__slide">
+            <img class="works__img" src="img/works/work3.jpg" alt="">
+            <div class="works__content">
+                <h3 class="works__title">Beautiful Mountain</h3>
+                <p class="works__text">
+                    Beatiful Mountain
+                    Something more beautiful mountains photos.
+                </p>
+            </div>
+        </div>
+
+        <div class="works__slide">
+            <img class="works__img" src="img/works/work4.jpg" alt="">
+            <div class="works__content">
+                <h3 class="works__title">Beautiful Mountain</h3>
+                <p class="works__text">
+                    Beatiful Mountain
+                    Something more beautiful mountains photos.
+                </p>
+            </div>
+        </div>
+
+        <div class="works__slide">
+            <img class="works__img" src="img/works/work5.jpg" alt="">
+            <div class="works__content">
+                <h3 class="works__title">Beautiful Mountain</h3>
+                <p class="works__text">
+                    Beatiful Mountain
+                    Something more beautiful mountains photos.
+                </p>
+            </div>
+        </div>
+
+        <div class="works__slide">
+            <img class="works__img" src="img/works/work6.jpg" alt="">
+            <div class="works__content">
+                <h3 class="works__title">Beautiful Mountain</h3>
+                <p class="works__text">
+                    Beatiful Mountain
+                    Something more beautiful mountains photos.
+                </p>
+            </div>
+        </div>
+
+        <div class="works__slide">
+            <img class="works__img" src="img/works/work7.jpg" alt="">
+            <div class="works__content">
+                <h3 class="works__title">Beautiful Mountain</h3>
+                <p class="works__text">
+                    Beatiful Mountain
+                    Something more beautiful mountains photos.
+                </p>
+            </div>
+        </div>
+
+        <div class="works__slide">
+            <img class="works__img" src="img/works/work8.jpg" alt="">
+            <div class="works__content">
+                <h3 class="works__title">Beautiful Mountain</h3>
+                <p class="works__text">
+                    Beatiful Mountain
+                    Something more beautiful mountains photos.
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="works__slide">
+            <img class="works__img" src="img/works/work1.jpg" alt="">
+            <div class="works__content">
+                <h3 class="works__title">Beautiful Mountain</h3>
+                <p class="works__text">
+                    Beatiful Mountain
+                    Something more beautiful mountains photos.
+                </p>
+            </div>
+        </div>
+
+        <div class="works__slide">
+            <img class="works__img" src="img/works/work2.jpg" alt="">
+            <div class="works__content">
+                <h3 class="works__title">Beautiful Mountain</h3>
+                <p class="works__text">
+                    Beatiful Mountain
+                    Something more beautiful mountains photos.
+                </p>
+            </div>
+        </div>
+
+        <div class="works__slide">
+            <img class="works__img" src="img/works/work3.jpg" alt="">
+            <div class="works__content">
+                <h3 class="works__title">Beautiful Mountain</h3>
+                <p class="works__text">
+                    Beatiful Mountain
+                    Something more beautiful mountains photos.
+                </p>
+            </div>
+        </div>
+
+        <div class="works__slide">
+            <img class="works__img" src="img/works/work4.jpg" alt="">
+            <div class="works__content">
+                <h3 class="works__title">Beautiful Mountain</h3>
+                <p class="works__text">
+                    Beatiful Mountain
+                    Something more beautiful mountains photos.
+                </p>
+            </div>
+        </div>
+        
+
+        
+    </div>
+</section>
+
+<!-- BLOGS -->
+<section class="blog" id="blog">
+    <div class="top-line"></div>
+    <div class="wrapper">
+        <h2 class="section-title">Recent <span>Blog Posts</span></h2>
+        <div class="posts">
+            
+            <div class="posts__item">
+                <div class="post__image">
+                    <img src="img/posts/blog-photo1.jpg" alt="">
+                </div>
+                <div class="post__author-photo">
+                    <img src="img/posts/author1.jpg" alt="">
+                </div>
+                <p class="post__date">
+                    January 11, 2014
+                </p>
+                <div class="post__text">
+                    <p>Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing. Aliquam viverra   dolor sit consectetur.</p>
+                </div>
+            </div>
+
+            <div class="posts__item">
+                <div class="post__image">
+                    <img src="img/posts/blog-photo2.jpg" alt="">
+                </div>
+                <div class="post__author-photo">
+                    <img src="img/posts/author2.jpg" alt="">
+                </div>
+                <p class="post__date">
+                    January 10, 2014
+                </p>
+                <div class="post__text">
+                    <p>Lorem ipsum dolor sit amet, 
+                        consectetur adipiscing.</p>
+                </div>
+            </div>
+
+            <div class="posts__item">
+                <div class="post__image">
+                    <img src="img/posts/blog-photo3.jpg" alt="">
+                </div>
+                <div class="post__author-photo">
+                    <img src="img/posts/author3.jpg" alt="">
+                </div>
+                <p class="post__date">
+                    January 9, 2014
+                </p>
+                <div class="post__text">
+                    <p>Lorem ipsum dolor sit amet, 
+                        consectetur adipiscing. Aliquam viverra   dolor sit.</p>
+                </div>
+            </div>
+
+        </div><!-- ./posts -->
+        
+    </div><!-- ./wrapper -->
+</section><!-- ./blog -->
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer__map outer-wrapper">
+
+        <div class="contact" id="contact">
+            <div class="top-line"></div>
+            <h2 class="section-title">Contact <span>Us Now</span></h2>
+            <address class="address">
+                <p class="address__street">Lorem ipsum address line1, address line 2 </p>
+                <a class="address__phone" href="tel:0414-459-237">0414 459 237</a>
+                <a class="address__email" href="mailto:info@elegantbizz.com">info@elegantbizz.com</a>
+            </address>
+    
+            <form class="contact__form">
+                <input class="name-input" type="text" name="name" placeholder="Name">
+                <input class="email-input" type="email" name="email" placeholder="Email">
+                <textarea class="message" name="message" placeholder="Message"></textarea>
+                
+                <button class="submit-button" type="submit">
+                    <img src="img/send.png" alt="">
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer__bottom-bar">
+        <nav class="nav--footer">
+            <a href="#" class="nav--footer__link" data-scroll="#header">Home</a>
+            <a href="#" class="nav--footer__link" data-scroll="#features">Features</a>
+            <a href="#" class="nav--footer__link" data-scroll="#works">Work</a>
+            <a href="#" class="nav--footer__link" data-scroll="#blog">Blog</a>
+            <a href="#" class="nav--footer__link" data-scroll="#contact">Contact</a>
+        </nav>
+        <p class="footer__copyright">
+            KreativePixel &copy; 2014 All Rights Reserved. 
+        </p>
+    </div>
+    
+</footer>
+<!-- ./ -->
+
+
+
+
+<!-- SCRIPTS -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
