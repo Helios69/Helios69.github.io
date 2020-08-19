@@ -388,7 +388,7 @@ section {
 
 .about__slider .slick-prev {
   left: 15px;
-  background-image: url(../img/left-arrow.svg);
+  background-image: url(../img/right-arrow.svg);
 }
 
 .about__slider .slick-next {

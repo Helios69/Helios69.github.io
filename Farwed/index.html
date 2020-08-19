@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&family=Sail&display=swap" rel="stylesheet">
+</head>
+<body>
+    <svg style="display: none;">
+    <symbol id="facebook-icon" viewBox="0 0 512 512">
+        <g>
+            <path d="M288,176v-64c0-17.664,14.336-32,32-32h32V0h-64c-53.024,0-96,42.976-96,96v80h-64v80h64v256h96V256h64l32-80H288z"/>
+        </g>
+    </symbol>
+
+    
+    <symbol id="twitter-icon" viewBox="0 0 512 512">
+        <g>
+            <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+                c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+                c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+                c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+                c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+                c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+                C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+                C480.224,136.96,497.728,118.496,512,97.248z"/>
+        </g>
+    </symbol>
+
+    <symbol id="instagram-icon" viewBox="0 0 512 512">
+        <g>
+            <g>
+                <path d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160
+                    C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48
+                    h192c61.76,0,112,50.24,112,112V352z"/>
+            </g>
+        </g>
+        <g>
+            <g>
+                <path d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128S326.688,128,256,128z M256,336
+                    c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80C336,300.096,300.096,336,256,336z"/>
+            </g>
+        </g>
+        <g>
+            <g>
+                <circle cx="393.6" cy="118.4" r="17.056"/>
+            </g>
+        </g>
+    </symbol>
+
+    <symbol id="youtube-icon" viewBox="0 0 512 512">
+        <g>
+            <g>
+                <path d="M490.24,113.92c-13.888-24.704-28.96-29.248-59.648-30.976C399.936,80.864,322.848,80,256.064,80
+                    c-66.912,0-144.032,0.864-174.656,2.912c-30.624,1.76-45.728,6.272-59.744,31.008C7.36,138.592,0,181.088,0,255.904
+                    C0,255.968,0,256,0,256c0,0.064,0,0.096,0,0.096v0.064c0,74.496,7.36,117.312,21.664,141.728
+                    c14.016,24.704,29.088,29.184,59.712,31.264C112.032,430.944,189.152,432,256.064,432c66.784,0,143.872-1.056,174.56-2.816
+                    c30.688-2.08,45.76-6.56,59.648-31.264C504.704,373.504,512,330.688,512,256.192c0,0,0-0.096,0-0.16c0,0,0-0.064,0-0.096
+                    C512,181.088,504.704,138.592,490.24,113.92z M192,352V160l160,96L192,352z"/>
+            </g>
+        </g>
+    </symbol>
+    
+</svg>
+
+    <header class="header" id="header">
+    <div class="wrapper">
+        <div class="topbar">
+            <div id="toggle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <nav class="topbar__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item" data-scroll="#about"><a href="#">About Us</a></li>
+                    <li class="nav__item" data-scroll="#moments"><a href="#">Moments</a></li>
+                    <li class="nav__item" data-scroll="#story"><a href="#">Story</a></li>
+                    <li class="nav__item" data-scroll="#people"><a href="#">People</a></li>
+                    <li class="nav__item" data-scroll="#ceremony"><a href="#">Ceremony</a></li>
+                    <li class="nav__item" data-scroll="#rsvp"><a href="#">RSVP</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <div class="outer-wrapper">
+        <div class="header__social">
+                <a href="#" class="social-icon">
+                    <svg>
+                        <use xlink:href=#facebook-icon></use>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon">
+                    <svg>
+                        <use xlink:href=#twitter-icon></use>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon">
+                    <svg>
+                        <use xlink:href=#instagram-icon></use>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon">
+                    <svg>
+                        <use xlink:href=#youtube-icon></use>
+                    </svg>
+                </a>
+        </div>
+        <div class="header__intro intro">
+            <div class="general-info">
+                <h1 class="general-info__title">Ana & David</h1>
+                <h2 class="general-info__subtitle">We are getting married</h2>
+                <span class="general-info__location">Carina Park</span>
+                <span class="general-info__address">Piko Bima Center, 49 BG Road <br> Alabama, CA</span>
+                <div class="general-info__timer timer">
+                    <h2 class="timer__title">Big moments Left  ~</h2>
+                    <div class="timer__time-remain">
+                        <span class="days timer__unit"><span>12</span> <br> Days</span>
+                        <span class="hours timer__unit"><span>5</span> <br> Hour </span>
+                        <span class="minutes timer__unit"><span>3</span> <br> Minute</span>
+                        <span class="seconds timer__unit"><span>5</span> <br> Second</span>
+                    </div>
+                </div>
+            </div>
+            <div class="intro__slider">                    
+                    <div class="intro__slide slide">
+                        <div class="slide__img">
+                            <img src="https://images.squarespace-cdn.com/content/v1/5e8734078136f513e25d34c4/1587400261143-X4ICLQCW8N70J8PQ2FWQ/ke17ZwdGBToddI8pDm48kApm4bZ6Mn3TiUWou3kA3bp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UWZaykogqWzieOupsqeSuBYug-y5Ut2InYZT1FrJD3yL-rj95DA1mjJIBxXFGHkuyQ/Beach+Wedding+Crim+Barefoot+Beach+Bride.jpg?format=2500w" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</header>
+    <section class="about" id="about">
+  <div class="outer-wrapper">
+    <div class="wrapper">
+        <h2 class="section-title">Who We are?</h2>
+        <p class="section-description">dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+        <div class="about__container">
+            <div class="about__item">
+                <div class="self-description">
+                    <span class="self-description__name">Robin David</span>
+                    <p class="self-description__text">Lorem ipsum dolor sit amet, consectetur adipisicing uip ex ea commodo consequat. Duis aute irure dolornderit in voluptate velit esse cillum dolore eu</p>
+                    <div class="self-description__social">
+                        <a href="#" class="social-icon">
+                            <svg>
+                                <use xlink:href=#facebook-icon></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg>
+                                <use xlink:href=#twitter-icon></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg>
+                                <use xlink:href=#instagram-icon></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg>
+                                <use xlink:href=#youtube-icon></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="about__img">
+                    <img src="https://bauerfrodoprod-cdn.azureedge.net/uploads/e3bb5459-077e-4633-a793-c6056dacb89e-ls4618_42_gi_172600883.jpg" alt="">
+                </div>
+            </div>
+            <div class="about__item">
+                <div class="self-description">
+                    <span class="self-description__name">Ana Marwana</span>
+                    <p class="self-description__text">Lorem ipsum dolor sit amet, consectetur adipisicing uip ex ea commodo consequat. Duis aute irure dolornderit in voluptate velit esse cillum dolore eu</p>
+                    <div class="self-description__social">
+                        <a href="#" class="social-icon">
+                            <svg>
+                                <use xlink:href=#facebook-icon></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg>
+                                <use xlink:href=#twitter-icon></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg>
+                                <use xlink:href=#instagram-icon></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg>
+                                <use xlink:href=#youtube-icon></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="about__img">
+                    <img src="https://i0.wp.com/ideasfornames.com/wp-content/uploads/2019/11/shutterstock_561829969.jpg?ssl=1" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+  </div>
+    
+</section>
+    <section class="moments" id="moments">
+    <div class="wrapper">
+        <h2 class="section-title">Our Happy Moments</h2>
+        <p class="section-description">dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <div class="gallery">
+            <div class="gallery__item">
+                <img src="https://img4.goodfon.ru/wallpaper/nbig/d/73/pikseli-pxl-art-gory-vid-peisazh-8bit-priroda-grafika-retro.jpg" alt="">
+            </div>
+            <div class="gallery__item">
+                <img src="https://99px.ru/sstorage/53/2017/02/tmb_191054_1457.jpg" alt="">
+            </div>
+            <div class="gallery__item">
+                <img src="https://cs5.pikabu.ru/post_img/big/2014/10/28/8/1414504682_514982114.jpg" alt="">
+            </div>
+            <div class="gallery__item">
+                <img src="https://cs.pikabu.ru/post_img/big/2013/10/17/10/1382023641_740301123.jpg" alt="">
+            </div>
+            <!-- <div class="gallery__item">
+                <img src="https://images.glavred.info/2018_03/1521653015-36121305.jpg" alt="">
+            </div> -->
+            <div class="gallery__item">
+                <img src="https://a-static.besthdwallpaper.com/zakat-krasivyy-vid-oboi-2560x1600-10734_7.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="story" id="story">
+    <div class="wrapper">
+        <h2 class="section-title">Our Story</h2>
+        <p class="section-description">dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <div class="story__container">
+            <div class="story__item">
+                <!-- <div class="story__image">
+                    <div class="img">
+                        <img src="https://www.ksat.com/resizer/ZhyZpsL_27pttOSvupy8JxtrFZU=/1280x720/smart/filters:format(jpeg):strip_exif(true):strip_icc(true):no_upscale(true):quality(65)/cloudfront-us-east-1.images.arcpublishing.com/gmg/W3CCQ6MXXBASJCSOV7EE64B4Q4.jpg" alt="">
+                    </div>
+                    <svg class="svg">
+                        <circle class="c3" cx="50%" cy="50%" r="302px" fill="transparent"/>
+                        <circle class="c2" cx="50%" cy="50%" r="276px" fill="transparent"/>
+                        <circle class="c1" cx="50%" cy="50%" r="254px" fill="transparent"/>
+                    </svg>
+                </div> -->
+                <div class="story__image">
+                    <img src="https://www.ksat.com/resizer/ZhyZpsL_27pttOSvupy8JxtrFZU=/1280x720/smart/filters:format(jpeg):strip_exif(true):strip_icc(true):no_upscale(true):quality(65)/cloudfront-us-east-1.images.arcpublishing.com/gmg/W3CCQ6MXXBASJCSOV7EE64B4Q4.jpg" alt="">
+                </div>
+                <div class="story__content">
+                    <span class="story__date">January 12, 2010</span>
+                    <h3 class="story__title">The day we First met</h3>
+                    <p class="story__text">Lorem ipsum dolor sit amet, consectetur adipisicing aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla..</p>
+                    <a href="#" class="story__read-more">Read More ...</a>
+                </div>
+            </div>
+            <div class="story__item">
+                <div class="story__image">
+                    <img src="https://www.ksat.com/resizer/ZhyZpsL_27pttOSvupy8JxtrFZU=/1280x720/smart/filters:format(jpeg):strip_exif(true):strip_icc(true):no_upscale(true):quality(65)/cloudfront-us-east-1.images.arcpublishing.com/gmg/W3CCQ6MXXBASJCSOV7EE64B4Q4.jpg" alt="">
+                </div>
+                <div class="story__content">
+                    <span class="story__date">January 12, 2010</span>
+                    <h3 class="story__title">The day we First met</h3>
+                    <p class="story__text">Lorem ipsum dolor sit amet, consectetur adipisicing aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla..</p>
+                    <a href="#" class="story__read-more">Read More ...</a>
+                </div>
+            </div>
+            <div class="story__item">
+                <div class="story__image">
+                    <img src="https://www.ksat.com/resizer/ZhyZpsL_27pttOSvupy8JxtrFZU=/1280x720/smart/filters:format(jpeg):strip_exif(true):strip_icc(true):no_upscale(true):quality(65)/cloudfront-us-east-1.images.arcpublishing.com/gmg/W3CCQ6MXXBASJCSOV7EE64B4Q4.jpg" alt="">
+                </div>
+                <div class="story__content">
+                    <span class="story__date">January 12, 2010</span>
+                    <h3 class="story__title">The day we First met</h3>
+                    <p class="story__text">Lorem ipsum dolor sit amet, consectetur adipisicing aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla..</p>
+                    <a href="#" class="story__read-more">Read More ...</a>
+                </div>
+            </div>
+            <div class="story__item">
+                <div class="story__image">
+                    <img src="https://www.ksat.com/resizer/ZhyZpsL_27pttOSvupy8JxtrFZU=/1280x720/smart/filters:format(jpeg):strip_exif(true):strip_icc(true):no_upscale(true):quality(65)/cloudfront-us-east-1.images.arcpublishing.com/gmg/W3CCQ6MXXBASJCSOV7EE64B4Q4.jpg" alt="">
+                </div>
+                <div class="story__content">
+                    <span class="story__date">January 12, 2010</span>
+                    <h3 class="story__title">The day we First met</h3>
+                    <p class="story__text">Lorem ipsum dolor sit amet, consectetur adipisicing aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla..</p>
+                    <a href="#" class="story__read-more">Read More ...</a>
+                </div>
+            </div>
+             
+
+
+        </div>
+    </div>
+</section>
+    <section class="people" id="people">
+    <div class="wrapper">
+        <h2 class="section-title">Our People</h2>
+        <p class="section-description">dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        
+        <div class="people__outer-container">
+            <div class="people__inner-container groomsmen">
+                <div class="people__item">
+                    <div class="ppl">
+                        <img class="ppl__img" src="https://miro.medium.com/max/1000/1*qyAOepULOa_kVehhEIySKA.jpeg" alt="">
+                        <div class="ppl__content">
+                            <span class="ppl__name">David Hamilton</span>
+                            <span class="ppl__position">Cousin</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="people__item">
+                    <div class="ppl">
+                        <img class="ppl__img" src="https://miro.medium.com/max/1000/1*qyAOepULOa_kVehhEIySKA.jpeg" alt="">
+                        <div class="ppl__content">
+                            <span class="ppl__name">David Hamilton</span>
+                            <span class="ppl__position">Cousin</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="people__item">
+                    <div class="ppl">
+                        <img class="ppl__img" src="https://miro.medium.com/max/1000/1*qyAOepULOa_kVehhEIySKA.jpeg" alt="">
+                        <div class="ppl__content">
+                            <span class="ppl__name">David Hamilton</span>
+                            <span class="ppl__position">Cousin</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="people__item">
+                    <div class="ppl">
+                        <img class="ppl__img" src="https://miro.medium.com/max/1000/1*qyAOepULOa_kVehhEIySKA.jpeg" alt="">
+                        <div class="ppl__content">
+                            <span class="ppl__name">David Hamilton</span>
+                            <span class="ppl__position">Cousin</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="people__inner-container bridesmaid">
+                <div class="people__item">
+                    <div class="ppl">
+                        <img class="ppl__img" src="https://miro.medium.com/max/1000/1*qyAOepULOa_kVehhEIySKA.jpeg" alt="">
+                        <div class="ppl__content">
+                            <span class="ppl__name">David Hamilton</span>
+                            <span class="ppl__position">Cousin</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="people__item">
+                    <div class="ppl">
+                        <img class="ppl__img" src="https://miro.medium.com/max/1000/1*qyAOepULOa_kVehhEIySKA.jpeg" alt="">
+                        <div class="ppl__content">
+                            <span class="ppl__name">David Hamilton</span>
+                            <span class="ppl__position">Cousin</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="people__item">
+                    <div class="ppl">
+                        <img class="ppl__img" src="https://miro.medium.com/max/1000/1*qyAOepULOa_kVehhEIySKA.jpeg" alt="">
+                        <div class="ppl__content">
+                            <span class="ppl__name">David Hamilton</span>
+                            <span class="ppl__position">Cousin</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="people__item">
+                    <div class="ppl">
+                        <img class="ppl__img" src="https://miro.medium.com/max/1000/1*qyAOepULOa_kVehhEIySKA.jpeg" alt="">
+                        <div class="ppl__content">
+                            <span class="ppl__name">David Hamilton</span>
+                            <span class="ppl__position">Cousin</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="ceremony" id="ceremony">
+    <div class="wrapper">
+        <h2 class="section-title">Our Marriage Ceremony</h2>
+        <p class="section-description">dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    
+        <div class="cards">
+            <div class="cards__item">
+                <div class="card">
+                    <h5 class="card__title">Friends Meetup</h5>
+                    <span class="card__info card__time">Time:  9:00 AM</span>
+                    <span class="card__info card__area">Area:  Bislol Area Zone,</span>
+                    <span class="card__info card__address">Address:  Pitarson St, Jenopa Park Pinabar, Alata</span>
+                </div>
+            </div>
+
+            <div class="cards__item">
+                <div class="card">
+                    <h5 class="card__title">Friends Meetup</h5>
+                    <span class="card__info card__time">Time:  9:00 AM</span>
+                    <span class="card__info card__area">Area:  Bislol Area Zone,</span>
+                    <span class="card__info card__address">Address:  Pitarson St, Jenopa Park Pinabar, Alata</span>
+                </div>
+            </div>
+
+            <div class="cards__item">
+                <div class="card">
+                    <h5 class="card__title">Friends Meetup</h5>
+                    <span class="card__info card__time">Time:  9:00 AM</span>
+                    <span class="card__info card__area">Area:  Bislol Area Zone,</span>
+                    <span class="card__info card__address">Address:  Pitarson St, Jenopa Park Pinabar, Alata</span>
+                </div>
+            </div>
+
+            <div class="cards__item">
+                <div class="card">
+                    <h5 class="card__title">Friends Meetup</h5>
+                    <span class="card__info card__time">Time:  9:00 AM</span>
+                    <span class="card__info card__area">Area:  Bislol Area Zone,</span>
+                    <span class="card__info card__address">Address:  Pitarson St, Jenopa Park Pinabar, Alata</span>
+                </div>
+            </div>
+
+            <div class="cards__item">
+                <div class="card">
+                    <h5 class="card__title">Friends Meetup</h5>
+                    <span class="card__info card__time">Time:  9:00 AM</span>
+                    <span class="card__info card__area">Area:  Bislol Area Zone,</span>
+                    <span class="card__info card__address">Address:  Pitarson St, Jenopa Park Pinabar, Alata</span>
+                </div>
+            </div>
+
+            <div class="cards__item">
+                <div class="card">
+                    <h5 class="card__title">Friends Meetup</h5>
+                    <span class="card__info card__time">Time:  9:00 AM</span>
+                    <span class="card__info card__area">Area:  Bislol Area Zone,</span>
+                    <span class="card__info card__address">Address:  Pitarson St, Jenopa Park Pinabar, Alata</span>
+                </div>
+            </div>
+
+            
+
+           
+        </div>
+    </div>
+</section>
+    <section class="contact" id="rsvp">
+    <div class="outer-wrapper">
+        <div class="flowers">
+            <div class="contact-container">
+                <h2 class="contact-container__title">Confirm your invitation</h2>
+                <p class="contact-container__description">dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <form action="post" class="form">
+                    <div class="form__input-row">
+                        <input class="form__input" type="text" placeholder="Name">
+                        <input class="form__input" type="email" placeholder="Email">
+                    </div>
+                    <div class="form__input-row">
+                        <input class="form__input" type="text" placeholder="Number of Guests">
+                        <input class="form__input" type="text" placeholder="Attending Events">
+                    </div>
+                    <textarea class="form__message" name="message" placeholder="Message"></textarea>
+                    <button class="form__submit" type="submit">I am Attending</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer" id="footer">
+    <a href="#" class="footer__logo">Ana & David</a>
+    <span class="footer__copy">Copyright 2020 Farwed | All Rights Reserved | Coded by Helios</span>
+</footer>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/script.min.js"></script>
+</body>
+</html>
